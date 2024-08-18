@@ -1,0 +1,54 @@
+{
+  "name": "fittrax-bl0ijq",
+  "version": "1.0.0",
+  "description": "A web application for fitness enthusiasts to track their progress, set goals, and share their achievements with friends",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md}\"",
+    "test": "jest",
+    "build:api": "tsc && tsc-watch --onSuccess \"nodemon server/index.js\"",
+    "docker:build": "docker build -t fittrax-bl0ijq .",
+    "docker:run": "docker run -d -p 3000:3000 fittrax-bl0ijq"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spectra-ai-codegen/FitTrax-bl0ijq.git"
+  },
+  "author": "Spectra.Codes",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/spectra-ai-codegen/FitTrax-bl0ijq/issues"
+  },
+  "homepage": "https://github.com/spectra-ai-codegen/FitTrax-bl0ijq#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^18.16.12",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.42.0",
+    "eslint-config-next": "^13.4.12",
+    "jest": "^29.5.0",
+    "next": "^14.0.0",
+    "postcss": "^8.4.24",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.2.0",
+    "axios": "^1.4.0",
+    "chart.js": "^4.2.1",
+    "express": "^4.18.2",
+    "next-auth": "^4.20.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "supabase": "^2.1.0",
+    "zustand": "^4.3.7"
+  }
+}
