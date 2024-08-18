@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "types": [
+      "jest",
+      "node",
+      "react",
+      "react-dom",
+      "next",
+      "express",
+      "@types/express",
+      "supabase",
+      "@supabase/supabase-js",
+      "next-auth",
+      "zustand",
+      "chart.js"
+    ],
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "server",
+    "pages",
+    "components",
+    "utils",
+    "styles",
+    "next.config.js",
+    "tailwind.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "*.d.ts",
+    "**/*.d.ts"
+  ]
+}
